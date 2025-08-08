@@ -62,7 +62,7 @@ const UploadForm = ({ onSuccess, userCredits }) => {
           timestamp: new Date().toISOString()
         }
 
-        const response = await fetch('https://64.227.145.136:5678/webhook/cvfixer-main', {
+        const response = await fetch(import.meta.env.VITE_MAIN_WEBHOOK, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
