@@ -1,0 +1,15 @@
+# Netlify Redirects for React Router
+# This file should be placed in the public folder
+
+# Handle React Router routes
+/*    /index.html   200
+
+# Specific redirects for common paths
+/login    /index.html   200
+/login.html    /index.html   200
+/dashboard    /index.html   200
+/dashboard.html    /index.html   200
+/register    /index.html   200
+
+# API redirects (if needed for your n8n webhooks)
+/api/*    https://miraclesworkflow.app.n8n.cloud/:splat   200
